@@ -8,7 +8,7 @@ int main()
 	//~ char str1[] = "mage";
 	//~ char *p;
 	int result;
-	int i,k;
+	//~ int i,k;
 	fp1 = fopen("words","r");
 	if (fp1 == NULL)
     {
@@ -29,23 +29,23 @@ int main()
 	{
 		fgets(data,25,fp1);
 		
-		result=strlen(data);
-		k=0;
-		for(i=0;i<result;i++)
-		{
-			if (data[i] == 'o')
-				k++;
-		}
-		if (k>=5)
-			fprintf(fp2,"%s",data);
+		//~ result=strlen(data);
+		//~ k=0;
+		//~ for(i=0;i<result;i++)
+		//~ {
+			//~ if (data[i] == 'o')
+				//~ k++;
+		//~ }
+		//~ if (k>=5)
+			//~ fprintf(fp2,"%s",data);
 			
 		//~ p = strstr (data,str1);
 		//~ if(p)
 			//~ fprintf(fp2,"%s",data);
 			
-		//~ result=strlen(data);
-		//~ if(result>20)
-			//~ fprintf(fp2,"%s",data);
+		result=strlen(data);
+		if(result>20)
+			fprintf(fp2,"%s",data);
 			
 			//~ printf("%d\n",result);
 		//~ result = strcmp(str1,data);
